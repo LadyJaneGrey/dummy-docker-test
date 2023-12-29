@@ -26,5 +26,5 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME}}/test-push-vincent:random1
+        tags: ${{ secrets.DOCKERHUB_USERNAME}}/test-push-vincent:${{ github.run_id }}
 

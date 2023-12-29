@@ -1,0 +1,18 @@
+name: Hello World Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Dummy Build Application 
+      run: echo "Hello, Vincent"
+

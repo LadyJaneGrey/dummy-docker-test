@@ -6,7 +6,7 @@ WORKDIR /app
 # COPY server /app/server
 # COPY client /app/client
 
-RUN echo "Hello world"
+RUN echo "Hello worljd"
 RUN ls 
 
 # build image
